@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 
 export const runtime = "edge";
-export const revalidate = 3600;
+export const dynamic = "force-dynamic";
 
 type OEmbedData = {
   title: string;
@@ -28,7 +28,7 @@ export async function GET(request: Request) {
   const results = await Promise.allSettled(
     uniqueIds.map(async (videoId) => {
       const url = `https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=${videoId}&format=json`;
-      const res = await fetch(url, { next: { revalidate } });
+      const res = await fetch(url);
       if (!res.ok) return [videoId, null] as const;
       const data = (await res.json()) as OEmbedData;
       return [videoId, data] as const;

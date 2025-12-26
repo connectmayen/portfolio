@@ -2,8 +2,7 @@ import BlogView from "@/components/BlogView";
 import { blogPosts } from "@/data/site-data";
 import type { Metadata } from "next";
 
-export const runtime = "edge";
-export const dynamicParams = false;
+export const dynamic = "force-static";
 
 export async function generateStaticParams() {
   return blogPosts.map((post) => ({
