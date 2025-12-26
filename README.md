@@ -1,3 +1,4 @@
+<!-- Trigger: Force Cloudflare Rebuild -->
 # Video Editor Portfolio - Nur Al Mahmud Mayen
 
 A modern, high-performance Next.js portfolio showcasing video editing work, documentary-style content, and visual storytelling expertise.
