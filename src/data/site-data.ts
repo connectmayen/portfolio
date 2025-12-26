@@ -21,7 +21,7 @@ export const blogPosts: BlogPost[] = [
         title: "The Art of Cinematic Storytelling",
         description: "Explore the techniques behind creating compelling narratives in video editing.",
         link: "#",
-        image: "/cinematic storytelling.jpeg",
+        image: "/cinematic-storytelling.jpeg",
         content: [
             { type: 'paragraph', text: "There's something magical about the moment a story clicks. You know that feeling when you're watching a video and suddenly you're not just watching anymore—you're in it. That's cinematic storytelling at work, and it's what I chase with every project I edit." },
             { type: 'heading', text: "It's Not Just About Pretty Shots" },
@@ -60,7 +60,7 @@ export const blogPosts: BlogPost[] = [
         title: "A Deep Dive into Color Grading",
         description: "Learn how to use color to evoke emotion and set the mood in your videos.",
         link: "#",
-        image: "/color grading.jpeg",
+        image: "/color-grading.jpeg",
         content: [
             { type: 'paragraph', text: "I still remember the first time I really got color grading. I was working on a travel video, and no matter what I did, it felt flat. The footage was decent, the story was there, but something was missing. Then I spent an entire afternoon just playing with the colors—not following any tutorial, just experimenting—and suddenly the whole thing came alive." },
             { type: 'paragraph', text: "That's when it clicked: color isn't just about making things look good. It's about making people feel something." },
@@ -127,7 +127,7 @@ export const blogPosts: BlogPost[] = [
         title: "Motion Graphics Tips for Beginners",
         description: "Discover the fundamentals of motion graphics and how to create stunning animations.",
         link: "#",
-        image: "/Motion Graphics.png",
+        image: "/motion-graphics.png",
         content: [
             { type: "paragraph", text: "Let me be honest with you—my first motion graphic looked like a PowerPoint presentation had a seizure." },
             { type: "paragraph", text: "I'm talking about text flying in from random directions, shapes bouncing around for no reason, and enough swoosh sounds to make anyone nauseous. I thought I was creating something \"dynamic.\" What I actually created was a mess." },
