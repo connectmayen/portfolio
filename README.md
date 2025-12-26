@@ -111,12 +111,24 @@ Edit `src/app/layout.tsx` to update:
 
 ## 🌐 Deployment
 
-### Vercel (Recommended)
+### Cloudflare Pages (Recommended)
 
-1. Push your code to GitHub
-2. Import project in Vercel
-3. Add `NEXT_PUBLIC_WEB3FORMS_KEY` environment variable
-4. Deploy!
+1. **Prepare for Cloudflare**:
+   Install the Cloudflare adapter for Next.js:
+   ```bash
+   npx @cloudflare/next-on-pages@latest
+   ```
+
+2. **Push to GitHub**:
+   Ensure all changes are pushed to your repository.
+
+3. **Deploy on Cloudflare**:
+   - Log in to the [Cloudflare Dashboard](https://dash.cloudflare.com/).
+   - Navigate to **Workers & Pages** > **Pages** > **Connect to Git**.
+   - Select this repository.
+   - Set **Framework Preset** to `Next.js`.
+   - Add `NEXT_PUBLIC_WEB3FORMS_KEY` in the **Environment Variables** section.
+   - Click **Save and Deploy**.
 
 ### Other Platforms
 
