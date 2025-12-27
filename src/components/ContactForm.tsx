@@ -65,7 +65,7 @@ const ContactForm = () => {
         setEmail("");
         setMessage("");
       } else {
-        setError("Something went wrong. Please try again.");
+        setError(result.message || "Something went wrong. Please try again.");
       }
     } catch (err) {
       setError("Failed to send message. Please check your connection.");
