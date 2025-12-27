@@ -30,7 +30,7 @@ const ContactForm = () => {
     }
 
     // Get API key from environment variable
-    const accessKey = "a39f82d0-228b-4be9-b49a-4456271d3b0fa";
+    const accessKey = "a39f82d0-228b-4be9-b49a-456271d3b0fa";
 
     if (!accessKey) {
       setError("Configuration error. Please contact the site administrator.");
