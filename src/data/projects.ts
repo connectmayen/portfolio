@@ -56,5 +56,13 @@ export const projects: Project[] = [
         isFeatured: true,
         category: "talking-head",
         description: "Short description of the project and your role",
+    },
+    {
+        id: "XmIielabPY4",
+        title: "Project Title 7",
+        role: "Editor",
+        isFeatured: false,
+        category: "talking-head",
+        description: "Short description of the project and your role",
     }
 ];
