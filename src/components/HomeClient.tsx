@@ -95,27 +95,27 @@ export default function HomeClient() {
 
             <main className="relative z-10 pt-20">
                 {/* Top navigation: centered links for Home, About, Blogs, Contact */}
-                <nav className="fixed top-6 left-0 right-0 z-50 flex justify-center px-6 sm:px-8">
-                    <div className="w-full max-w-5xl mx-auto flex items-center justify-between px-6 py-4 rounded-xl bg-white/12 backdrop-blur border border-white/20 shadow-[0_8px_40px_rgba(0,0,0,0.6)]">
+                <nav className="fixed top-6 left-0 right-0 z-50 flex justify-center px-4 sm:px-8">
+                    <div className="w-full max-w-5xl mx-auto flex items-center justify-between px-4 py-3 sm:px-6 sm:py-4 rounded-xl bg-white/12 backdrop-blur border border-white/20 shadow-[0_8px_40px_rgba(0,0,0,0.6)]">
 
                         {/* Home Link (Left) */}
                         <a
                             href="#home"
                             onClick={(e) => handleNavClick(e, 'home')}
-                            className="text-white text-lg font-bold tracking-tight hover:opacity-80 transition-opacity"
+                            className="text-white text-base sm:text-lg font-bold tracking-tight hover:opacity-80 transition-opacity"
                         >
                             Home
                         </a>
 
                         {/* Centered Links */}
-                        <div className="flex items-center gap-8">
+                        <div className="flex items-center gap-3 sm:gap-8">
                             {navLinks.filter(link => link.id !== 'home').map((link) => (
                                 <a
                                     key={link.id}
                                     href={`#${link.id}`}
                                     aria-label={link.label}
                                     onClick={(e) => handleNavClick(e, link.id)}
-                                    className={`${activeSection === link.id ? 'text-white' : 'text-zinc-400'} text-sm font-medium hover:text-white transition-colors duration-150`}
+                                    className={`${activeSection === link.id ? 'text-white' : 'text-zinc-400'} text-xs sm:text-sm font-medium hover:text-white transition-colors duration-150`}
                                 >
                                     {link.label}
                                 </a>

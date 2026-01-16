@@ -32,7 +32,7 @@ const MyWork: React.FC<MyWorkProps> = ({
           boxShadow:
             "inset 0 1px 1px rgba(255,255,255,0.2), 0 20px 50px rgba(0,0,0,0.5)",
         }}
-        className="max-w-7xl mx-auto bg-black/90 backdrop-blur-xl rounded-3xl p-10 sm:p-12 border border-white/20 ring-1 ring-white/10 will-change-transform"
+        className="max-w-7xl mx-auto bg-black/90 backdrop-blur-xl rounded-3xl p-6 sm:p-12 border border-white/20 ring-1 ring-white/10 will-change-transform"
         transition={{ type: "spring", stiffness: 120, damping: 30 }}
       >
         <h2 className="text-4xl sm:text-5xl font-bold text-zinc-100 mb-12 animate-fade-in-up">

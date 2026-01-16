@@ -28,7 +28,7 @@ const Hero = ({ onNavClick }: HeroProps) => {
               <h1 className="whitespace-nowrap uppercase font-bold text-[clamp(2rem,6vw,3rem)] leading-tight text-zinc-100">
                 Nur Al Mahmud Mayen
               </h1>
-              <div className="mt-2 uppercase text-lg sm:text-xl text-zinc-300 tracking-[0.35em] whitespace-nowrap">
+              <div className="mt-2 uppercase text-lg sm:text-xl text-zinc-300 tracking-[0.15em] sm:tracking-[0.35em] whitespace-nowrap">
                 Video Editor & Visual Storyteller
               </div>
             </div>
@@ -37,18 +37,18 @@ const Hero = ({ onNavClick }: HeroProps) => {
               story to life through cinematic editing, dynamic motion graphics,
               and polished post-production that makes your content stand out.
             </p>
-            <div className="flex flex-wrap gap-4 animate-fade-in-up animate-delay-200">
+            <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up animate-delay-200">
               <a
                 href="#my-work"
                 onClick={(e) => onNavClick(e, 'my-work')}
-                className="px-8 py-4 bg-white text-black rounded-full font-medium hover:bg-zinc-200 transition-all duration-300 hover:scale-105 active:scale-95"
+                className="px-8 py-4 bg-white text-center text-black rounded-full font-medium hover:bg-zinc-200 transition-all duration-300 hover:scale-105 active:scale-95"
               >
                 Watch My Work
               </a>
               <a
                 href="#contact"
                 onClick={(e) => onNavClick(e, 'contact')}
-                className="px-8 py-4 border-2 border-white text-white rounded-full font-medium hover:bg-white hover:text-black transition-all duration-300 hover:scale-105 active:scale-95"
+                className="px-8 py-4 border-2 border-white text-center text-white rounded-full font-medium hover:bg-white hover:text-black transition-all duration-300 hover:scale-105 active:scale-95"
               >
                 Let's Create Something
               </a>
@@ -77,7 +77,7 @@ const Hero = ({ onNavClick }: HeroProps) => {
             <div className="absolute bottom-[-40px] left-0 w-full flex flex-col items-center z-30 pointer-events-none">
 
               {/* Container for the timeline stack - Anchored to bottom */}
-              <div className="relative w-[140%] h-[300px] flex flex-col justify-end -mb-16">
+              <div className="relative w-[140%] h-[300px] flex flex-col justify-end origin-bottom scale-50 sm:scale-75 md:scale-100 -mb-10 sm:-mb-16">
 
                 {/* ROW 3: Top Layers (Stacked on top of Video) */}
                 <div className="absolute bottom-[160px] left-0 w-full flex justify-center items-end px-[15%] z-32">
