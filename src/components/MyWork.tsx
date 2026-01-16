@@ -21,7 +21,7 @@ const MyWork: React.FC<MyWorkProps> = ({
   return (
     <section
       id="my-work"
-      className="relative z-30 -mt-20 pt-0 pb-10 px-6 sm:px-8 lg:px-12"
+      className="relative z-30 -mt-22 pt-0 pb-10 px-6 sm:px-8 lg:px-12"
       ref={portfolioRef}
     >
       <motion.div
