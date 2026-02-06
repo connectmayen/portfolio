@@ -1,6 +1,7 @@
 "use client";
 
 import { motion, MotionValue } from "framer-motion";
+import React from "react";
 import Link from "next/link";
 import { projects } from "@/data/projects";
 import ProjectCard from "./ProjectCard";
@@ -17,6 +18,14 @@ const MyWork: React.FC<MyWorkProps> = ({
   smoothRotateX,
   smoothScale,
 }) => {
+  const [isMobile, setIsMobile] = React.useState(false);
+
+  React.useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
 
   return (
     <section
@@ -26,8 +35,8 @@ const MyWork: React.FC<MyWorkProps> = ({
     >
       <motion.div
         style={{
-          rotateX: smoothRotateX,
-          scale: smoothScale,
+          rotateX: isMobile ? 0 : smoothRotateX,
+          scale: isMobile ? 1 : smoothScale,
           transformPerspective: 1200,
           boxShadow:
             "inset 0 1px 1px rgba(255,255,255,0.2), 0 20px 50px rgba(0,0,0,0.5)",

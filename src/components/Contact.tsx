@@ -8,7 +8,7 @@ const Contact = () => {
         <h2 className="text-4xl sm:text-5xl font-bold text-zinc-100 mb-6">
           Let's Work Together
         </h2>
-        <p className="text-xl text-zinc-400 mb-12 whitespace-nowrap max-w-none overflow-visible">
+        <p className="text-xl text-zinc-400 mb-12 sm:whitespace-nowrap max-w-none overflow-visible">
           Have a project in mind? I'd love to hear from you. Send me a message and let's create something amazing.
         </p>
         <ContactForm />
