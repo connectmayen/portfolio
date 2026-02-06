@@ -41,12 +41,35 @@ const HeroMobile = ({ onNavClick }: HeroProps) => {
                         />
                     </div>
 
-                    {/* Floating software icons (Mobile version - static or subtle) */}
-                    <div className="absolute -top-4 -right-2 w-12 h-12 bg-zinc-900/80 backdrop-blur-md rounded-xl border border-white/20 p-2 shadow-xl animate-bounce-slow">
+                    {/* Floating software icons (Mobile version) */}
+                    {/* Premiere Pro - Top Right */}
+                    <div className="absolute top-0 -right-2 w-12 h-12 bg-zinc-900/80 backdrop-blur-md rounded-xl border border-white/20 p-2 shadow-xl animate-bounce-slow">
                         <Image src="/icons/pp.png" alt="PR" width={32} height={32} />
                     </div>
+                    {/* After Effects - Bottom Left */}
                     <div className="absolute bottom-4 -left-6 w-12 h-12 bg-zinc-900/80 backdrop-blur-md rounded-xl border border-white/20 p-2 shadow-xl animate-bounce-slow delay-700">
                         <Image src="/icons/ae.png" alt="AE" width={32} height={32} />
+                    </div>
+
+                    {/* Photoshop - Top Left */}
+                    <div className="absolute -top-2 -left-2 w-10 h-10 bg-zinc-900/80 backdrop-blur-md rounded-xl border border-white/20 p-2 shadow-xl animate-bounce-slow delay-300">
+                        <Image src="/icons/ps.png" alt="PS" width={32} height={32} />
+                    </div>
+                    {/* DaVinci - Bottom Right */}
+                    <div className="absolute bottom-6 -right-4 w-11 h-11 bg-zinc-900/80 backdrop-blur-md rounded-xl border border-white/20 p-2 shadow-xl animate-bounce-slow delay-500">
+                        <Image src="/icons/dvr.png" alt="DVR" width={32} height={32} />
+                    </div>
+                    {/* Illustrator - Right */}
+                    <div className="absolute top-1/2 -right-6 -translate-y-1/2 w-9 h-9 bg-zinc-900/80 backdrop-blur-md rounded-xl border border-white/20 p-1.5 shadow-xl animate-bounce-slow delay-200">
+                        <Image src="/icons/ai.png" alt="AI" width={32} height={32} />
+                    </div>
+                    {/* Audition - Left */}
+                    <div className="absolute top-1/2 -left-5 -translate-y-1/2 w-9 h-9 bg-zinc-900/80 backdrop-blur-md rounded-xl border border-white/20 p-1.5 shadow-xl animate-bounce-slow delay-1000">
+                        <Image src="/icons/au.png" alt="AU" width={32} height={32} />
+                    </div>
+                    {/* CapCut - Top Center */}
+                    <div className="absolute -top-6 left-1/2 -translate-x-1/2 w-10 h-10 bg-zinc-900/80 backdrop-blur-md rounded-xl border border-white/20 p-1.5 shadow-xl animate-bounce-slow delay-150">
+                        <Image src="/icons/cc.png" alt="CC" width={32} height={32} />
                     </div>
                 </div>
 
