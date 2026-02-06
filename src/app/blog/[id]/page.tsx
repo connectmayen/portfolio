@@ -1,4 +1,4 @@
-import BlogView from "@/components/BlogView";
+import BlogView from "@/components/blog/BlogView";
 import { blogPosts } from "@/data/site-data";
 import type { Metadata } from "next";
 

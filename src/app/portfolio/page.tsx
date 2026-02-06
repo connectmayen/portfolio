@@ -1,4 +1,4 @@
-import TheArchive from "@/components/TheArchive";
+import TheArchive from "@/components/portfolio/TheArchive";
 
 export default function PortfolioPage() {
     return (

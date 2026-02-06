@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import ScrollManager from "./ScrollManager.client";
-import ErrorBoundary from "@/components/ErrorBoundary";
+import ScrollManager from "@/components/layout/ScrollManager.client";
+import ErrorBoundary from "@/components/ui/ErrorBoundary";
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
