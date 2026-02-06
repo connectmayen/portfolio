@@ -30,7 +30,7 @@ const MyWork: React.FC<MyWorkProps> = ({
   return (
     <section
       id="my-work"
-      className="relative z-30 -mt-22 pt-0 pb-10 px-6 sm:px-8 lg:px-12"
+      className="relative z-30 mt-0 md:-mt-22 pt-8 md:pt-0 pb-10 px-6 sm:px-8 lg:px-12"
       ref={portfolioRef}
     >
       <motion.div
@@ -44,7 +44,7 @@ const MyWork: React.FC<MyWorkProps> = ({
         className="max-w-7xl mx-auto bg-black/90 backdrop-blur-xl rounded-3xl p-6 sm:p-12 border border-white/20 ring-1 ring-white/10 will-change-transform"
         transition={{ type: "spring", stiffness: 120, damping: 30 }}
       >
-        <h2 className="text-4xl sm:text-5xl font-bold text-zinc-100 mb-12 animate-fade-in-up">
+        <h2 className="text-4xl sm:text-5xl font-bold text-zinc-100 mb-6 md:mb-12 text-center md:text-left animate-fade-in-up">
           My Work
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
