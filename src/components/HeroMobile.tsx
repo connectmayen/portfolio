@@ -41,75 +41,36 @@ const HeroMobile = ({ onNavClick }: HeroProps) => {
                         />
                     </div>
 
-                    {/* Orbiting Icons Container */}
-                    <motion.div
-                        className="absolute inset-[-60px] pointer-events-none z-0"
-                        animate={{ rotate: 360 }}
-                        transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                    >
-                        {/* Premiere Pro - Top */}
-                        <motion.div
-                            className="absolute top-0 left-1/2 -translate-x-1/2 w-12 h-12 bg-zinc-900/80 backdrop-blur-md rounded-xl border border-white/20 p-2 shadow-xl"
-                            animate={{ rotate: -360 }}
-                            transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                        >
-                            <Image src="/icons/pp.png" alt="PR" width={32} height={32} />
-                        </motion.div>
+                    {/* Floating software icons (Mobile version) */}
+                    {/* Premiere Pro - Top Right */}
+                    <div className="absolute top-0 -right-2 w-12 h-12 bg-zinc-900/80 backdrop-blur-md rounded-xl border border-white/20 p-2 shadow-xl animate-bounce-slow">
+                        <Image src="/icons/pp.png" alt="PR" width={32} height={32} />
+                    </div>
+                    {/* After Effects - Bottom Left */}
+                    <div className="absolute bottom-4 -left-6 w-12 h-12 bg-zinc-900/80 backdrop-blur-md rounded-xl border border-white/20 p-2 shadow-xl animate-bounce-slow delay-700">
+                        <Image src="/icons/ae.png" alt="AE" width={32} height={32} />
+                    </div>
 
-                        {/* After Effects - Bottom Right */}
-                        <motion.div
-                            className="absolute bottom-[15%] right-[5%] w-12 h-12 bg-zinc-900/80 backdrop-blur-md rounded-xl border border-white/20 p-2 shadow-xl"
-                            animate={{ rotate: -360 }}
-                            transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                        >
-                            <Image src="/icons/ae.png" alt="AE" width={32} height={32} />
-                        </motion.div>
-
-                        {/* Photoshop - Top Left */}
-                        <motion.div
-                            className="absolute top-[15%] left-[5%] w-10 h-10 bg-zinc-900/80 backdrop-blur-md rounded-xl border border-white/20 p-2 shadow-xl"
-                            animate={{ rotate: -360 }}
-                            transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                        >
-                            <Image src="/icons/ps.png" alt="PS" width={32} height={32} />
-                        </motion.div>
-
-                        {/* DaVinci - Bottom Left */}
-                        <motion.div
-                            className="absolute bottom-[15%] left-[5%] w-11 h-11 bg-zinc-900/80 backdrop-blur-md rounded-xl border border-white/20 p-2 shadow-xl"
-                            animate={{ rotate: -360 }}
-                            transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                        >
-                            <Image src="/icons/dvr.png" alt="DVR" width={32} height={32} />
-                        </motion.div>
-
-                        {/* Illustrator - Top Right */}
-                        <motion.div
-                            className="absolute top-[15%] right-[5%] w-9 h-9 bg-zinc-900/80 backdrop-blur-md rounded-xl border border-white/20 p-1.5 shadow-xl"
-                            animate={{ rotate: -360 }}
-                            transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                        >
-                            <Image src="/icons/ai.png" alt="AI" width={32} height={32} />
-                        </motion.div>
-
-                        {/* Audition - Left */}
-                        <motion.div
-                            className="absolute top-1/2 left-[-20px] -translate-y-1/2 w-9 h-9 bg-zinc-900/80 backdrop-blur-md rounded-xl border border-white/20 p-1.5 shadow-xl"
-                            animate={{ rotate: -360 }}
-                            transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                        >
-                            <Image src="/icons/au.png" alt="AU" width={32} height={32} />
-                        </motion.div>
-
-                        {/* CapCut - Right */}
-                        <motion.div
-                            className="absolute top-1/2 right-[-20px] -translate-y-1/2 w-10 h-10 bg-zinc-900/80 backdrop-blur-md rounded-xl border border-white/20 p-1.5 shadow-xl"
-                            animate={{ rotate: -360 }}
-                            transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                        >
-                            <Image src="/icons/cc.png" alt="CC" width={32} height={32} />
-                        </motion.div>
-                    </motion.div>
+                    {/* Photoshop - Top Left */}
+                    <div className="absolute -top-2 -left-2 w-10 h-10 bg-zinc-900/80 backdrop-blur-md rounded-xl border border-white/20 p-2 shadow-xl animate-bounce-slow delay-300">
+                        <Image src="/icons/ps.png" alt="PS" width={32} height={32} />
+                    </div>
+                    {/* DaVinci - Bottom Right */}
+                    <div className="absolute bottom-6 -right-4 w-11 h-11 bg-zinc-900/80 backdrop-blur-md rounded-xl border border-white/20 p-2 shadow-xl animate-bounce-slow delay-500">
+                        <Image src="/icons/dvr.png" alt="DVR" width={32} height={32} />
+                    </div>
+                    {/* Illustrator - Right */}
+                    <div className="absolute top-1/2 -right-6 -translate-y-1/2 w-9 h-9 bg-zinc-900/80 backdrop-blur-md rounded-xl border border-white/20 p-1.5 shadow-xl animate-bounce-slow delay-200">
+                        <Image src="/icons/ai.png" alt="AI" width={32} height={32} />
+                    </div>
+                    {/* Audition - Left */}
+                    <div className="absolute top-1/2 -left-5 -translate-y-1/2 w-9 h-9 bg-zinc-900/80 backdrop-blur-md rounded-xl border border-white/20 p-1.5 shadow-xl animate-bounce-slow delay-1000">
+                        <Image src="/icons/au.png" alt="AU" width={32} height={32} />
+                    </div>
+                    {/* CapCut - Top Center */}
+                    <div className="absolute -top-6 left-1/2 -translate-x-1/2 w-10 h-10 bg-zinc-900/80 backdrop-blur-md rounded-xl border border-white/20 p-1.5 shadow-xl animate-bounce-slow delay-150">
+                        <Image src="/icons/cc.png" alt="CC" width={32} height={32} />
+                    </div>
                 </div>
 
                 {/* Text Content */}
